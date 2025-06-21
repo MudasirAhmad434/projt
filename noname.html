@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahindra Star Auto - Anantnag</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:#b4bebe";>
+  
+  <header>
+    <div class="logo">Mahindra Star Auto
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#vehicles">Vehicles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to Mahindra Star Auto</h1>
+    <p>Your journey begins with trust and performance.</p>
+    <a href="#contact" class="btn">Contact Us</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Mahindra Star Auto, now in Anantnag, Jammu & Kashmir, brings you the full range of Mahindra vehicles — built for every road and every dream.</p>
+  </section>
+
+  <section id="vehicles">
+    <h2>Our Vehicles</h2>
+    <div class="vehicle-grid">
+      <div class="vehicle">
+        <img src=plus.jpg alt="Mahindra jeeto plus ">
+        <h3>Mahindra jeeto plus</h3>
+        <p>Vehicle Type : petrol cargo<br>
+        payload : 715 kg <br>
+      Mileage : 21.2 km<br>
+    Engine Type : four stroke-positive ignitions,petrol </p>
+      </div>
+      <div class="vehicle">
+        <img src=jeeto.jpg alt="Mahindra Scorpio-N">
+        <h3>Mahindra jeeto strong</h3>
+        <p>Vehicle Type : diesel cargo<br>
+          Payload : 815 kg <br>
+        Mileage : 32 km<br>
+      Engine Type : DI Water Cooled </p>
+      </div>
+      <div class="vehicle">
+        <img src=alfa.jpg alt="Mahindra Scorpio-N">
+        <h3>Mahindra jeeto strong</h3>
+        <p>Vehicle Type : Diesel Cargo<br>
+          Payload : 520 kg<br>
+          Mileage : 29.4 km<br>
+          Engine power : 599 cm.</p>
+      </div>
+      <div class="vehicle">
+        <img src=treo.jpg alt="Mahindra Scorpio-N">
+        <h3>Mahindra Treo Auto</h3>
+        <p>Vehicle Type : Electric Auto<br>
+          Capacity : D+3<br>
+        Range : 110 km<br>
+      Battery capacity : 7.4 kw</p>
+      </div>
+      <div class="vehicle">
+        <img src=treoplus.png alt="Mahindra Scorpio-N">
+        <h3>Mahindra Treo plus</h3>
+        <p>vehicle type : Electric Auto<br>
+          Capacity : D+3<br>
+        Range : 150 km
+      <br> Battery capacity :10.24 kw</p>
+      </div>
+      <div class="vehicle">
+        <img src=limited.jpg alt="Mahindra Scorpio-N">
+        <h3>Mahindra Treo Limited Edition</h3>
+        <p>vehicle type : Electric Auto<br>
+        Capacity : D+3<br>
+      Range : 150 km<br>
+    Battery capacity: 10.24 kw</p>
+      </div>
+
+      
+     
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Sales Executive: <strong>Mudasir Ahmad Malik</strong></p>
+    <p>Phone: <a href="tel:7006928178">7006928178</a></p>
+    <p>Email: <a href="mailto:mahindrastarauto@gmail.com">mahindrastarauto@gmail.com</a></p>
+    <p>Location: Anantnag, Jammu & Kashmir</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mahindra Star Auto. All rights reserved.<BR>
+      Designed By Mudasir Malik
+    </p>
+  </footer>
+</body>
+<style type="text/css">
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #b90000;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('https://www.mahindraauto.com/images/banner.jpg') no-repeat center center/cover;
+  height: 70vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero .btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: white;
+  color: #b90000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.vehicle-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vehicle {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.vehicle img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .vehicle-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+</style>
+</html>
+
+
+---
