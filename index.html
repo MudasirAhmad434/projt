@@ -20,6 +20,33 @@
       </ul>
     </nav>
   </header>
+  
+<div class="marquee-container">
+    <div class="marquee-gallery">
+      <a href="#img1"><img src="https://source.unsplash.com/500x300/?thar" alt="Thar"></a>
+      <a href="#img2"><img src="https://source.unsplash.com/500x300/?scorpio" alt="Scorpio"></a>
+      <a href="#img3"><img src="https://source.unsplash.com/500x300/?pickup" alt="Pickup"></a>
+      <a href="#img4"><img src="https://source.unsplash.com/500x300/?mahindra" alt="Mahindra"></a>
+      <a href="#img5"><img src="https://source.unsplash.com/500x300/?jeep" alt="Jeep"></a>
+    </div>
+  </div>
+
+  <!-- Lightboxes -->
+  <div class="lightbox" id="img1">
+    <a href="#"><img src="https://source.unsplash.com/1000x600/?thar" alt="Thar Large"></a>
+  </div>
+  <div class="lightbox" id="img2">
+    <a href="#"><img src="https://source.unsplash.com/1000x600/?scorpio" alt="Scorpio Large"></a>
+  </div>
+  <div class="lightbox" id="img3">
+    <a href="#"><img src="https://source.unsplash.com/1000x600/?pickup" alt="Pickup Large"></a>
+  </div>
+  <div class="lightbox" id="img4">
+    <a href="#"><img src="https://source.unsplash.com/1000x600/?mahindra" alt="Mahindra Large"></a>
+  </div>
+  <div class="lightbox" id="img5">
+    <a href="#"><img src="https://source.unsplash.com/1000x600/?jeep" alt="Jeep Large"></a>
+  </div>
 
   <section id="home" class="hero">
     <h1>Welcome to Mahindra Star Auto</h1>
@@ -110,7 +137,61 @@ body {
   background: #f9f9f9;
   color: #333;
 }
+  
+.marquee-container {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      background: white;
+      padding: 20px 0;
+    }
 
+    .marquee-gallery {
+      display: inline-block;
+      animation: scroll 30s linear infinite;
+    }
+
+    .marquee-gallery a img {
+      height: 200px;
+      margin: 0 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .marquee-gallery a img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
 header {
   background-color: #b90000;
   color: white;
